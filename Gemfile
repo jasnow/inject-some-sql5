@@ -47,3 +47,5 @@ gem 'rdiscount'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'test-unit'
