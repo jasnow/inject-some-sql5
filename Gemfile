@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.22'
+gem 'rails', '4.0.0'
+gem 'protected_attributes' # For Rails 4.
 
 group :development do
   gem 'sqlite3'
