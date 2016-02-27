@@ -38,7 +38,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     commonjs (0.2.7)
-    concurrent-ruby (1.0.0)
+    concurrent-ruby (1.0.1)
     erubis (2.7.0)
     execjs (2.6.0)
     i18n (0.7.0)
