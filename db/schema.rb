@@ -13,16 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20130201060409) do
 
-  create_table "orders", force: true do |t|
+  create_table "orders", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "total"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "name"
-    t.string   "password"
+  create_table "users", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "password",   limit: 255
     t.integer  "age"
     t.boolean  "admin"
     t.datetime "created_at"

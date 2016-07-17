@@ -1,7 +1,29 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.16'
+gem 'rails', '4.2.7'
 gem 'protected_attributes' # For Rails 4.
+gem 'rails-perftest' # Need for Rails 4+.
+gem 'ruby-prof' # Need for Rails 4+.
+
+gem 'jquery-rails'
+gem 'coderay'
+gem 'rdiscount'
+gem 'test-unit'
+
+# Gems used only for assets and not required
+#    in production environments by default.
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+
+  # See https://github.com/sstephenson/execjs#readme for more
+  #    supported runtimes
+  gem 'therubyracer', :platforms => :ruby
+
+  gem 'twitter-bootstrap-rails'
+  gem 'less-rails'
+  gem 'uglifier'
+end
 
 group :development do
   gem 'sqlite3'
@@ -11,26 +33,7 @@ group :production do
   gem "pg"
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
-
-  gem 'twitter-bootstrap-rails'
-  gem 'less-rails'
-  gem 'uglifier'
-end
-
-gem 'jquery-rails'
-
-gem 'coderay'
-
-gem 'rdiscount'
-
+######################################################################
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -45,5 +48,3 @@ gem 'rdiscount'
 
 # To use debugger
 # gem 'debugger'
-
-gem 'test-unit'

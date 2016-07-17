@@ -1,0 +1,9 @@
+Run options: --seed 21093
+
+# Running:
+
+BrowsingTest#test_homepage (1.58 sec warmup)
+        process_time: 122 ms
+              memory: 0 Bytes
+             objects: 40,959
+.
